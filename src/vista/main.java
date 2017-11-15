@@ -62,18 +62,19 @@ public class main {
 		case '2':
 			System.out.println("FORMULARIO DE APERTURA DE CUENTA");
 			System.out.println("--------------------------------");
-			cliEdad=JOptionPane.showInputDialog(null, "Fecha de Nacimiento 11/22/3333", "FORMULARIO DE APERTURA",3);
+			cliEdad=JOptionPane.showInputDialog(null, "Fecha de Nacimiento yyyy-mm-dd", "FORMULARIO DE APERTURA",3);
 			DateTimeFormatter fmt = null;
 			LocalDate fecNacimiento = LocalDate.parse(cliEdad, fmt);
 			Period periodo = Period.between(fecNacimiento, ahora);
 			System.out.printf("Tu edad es: %s años",periodo.getYears());
-			if (periodo.compareTo(e)) {
+			
+			/*if () {
 				cliCodigo = JOptionPane.showInputDialog(null, "Ingrese Codigo Cliente:", "APERTURA CUENTA BANCARIA", 3);
 				cueSaldo = JOptionPane.showInputDialog(null, "Saldo Inicial: $", "APERTURA CUENTA BANCARIA", 3);
 				cueSobrecuenta = JOptionPane.showInputDialog(null, "Sobregiro: (1=si, 2=no)", "APERTURA CUENTA BANCARIA", 3);}
 			else
 				System.out.println("No posee la edad suficiente para abrir una cuenta.");
-			break;		
+			break;		**/
 		
 		default:
 			System.out.println("OPCION INCORRECTA");
