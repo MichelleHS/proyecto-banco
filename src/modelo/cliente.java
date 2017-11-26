@@ -15,6 +15,15 @@ public abstract class cliente extends persona {
 		return cliCategoria;	}
 	public void setCliCategoria(String cliCategoria) {
 		this.cliCategoria = cliCategoria;	}
+	
+
+	public ejecutivo getEje() {
+		return eje;
+	}
+
+	public void setEje(ejecutivo eje) {
+		this.eje = eje;
+	}
 
 	@Override
 	public String toString() {
