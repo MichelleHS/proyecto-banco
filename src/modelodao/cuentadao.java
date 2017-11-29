@@ -71,13 +71,13 @@ public class cuentadao {
 				cnn.cerrarConexion();}
 			return false;
 		}
-		public boolean eliminar(cuenta x) {
-			CallableStatement ps;
-			ResultSet rs;
-			int bandera = 0;
-			try {
-				ps=
-			}
+//			public boolean eliminar(cuenta x) {
+			//CallableStatement ps;
+		//	ResultSet rs;
+			//int bandera = 0;
+			//try {
+				//ps=
+			
 			
 		}
-	}
+	
